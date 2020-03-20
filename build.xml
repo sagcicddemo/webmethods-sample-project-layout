@@ -1,4 +1,3 @@
-<?xml version="1.0"?>
 <project name="testBuild" default="buildDeployTest" basedir="." >
         <!-- project.properties -->
 	<property file="project.properties"/>
