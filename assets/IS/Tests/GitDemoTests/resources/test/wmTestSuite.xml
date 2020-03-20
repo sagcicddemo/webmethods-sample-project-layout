@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webMethodsTestSuite description="" name="TestFlowSvc">
+    <webMethodsTestCase name="Flow Svc Pass">
+        <service folder="GitDemoPackage" name="DemoFlowSvc">
+            <input>
+                <file filename="resources/data/DemoSvcInput.xml"/>
+            </input>
+            <expected>
+                <file filename="resources/data/DemoSvcOutput.xml"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+</webMethodsTestSuite>
