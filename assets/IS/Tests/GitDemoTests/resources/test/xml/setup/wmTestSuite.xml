@@ -3,10 +3,10 @@
     <webMethodsTestCase name="Flow Svc Pass">
         <service folder="GitDemoPackage" name="DemoFlowSvc">
             <input>
-                <file filename="resources/data/DemoSvcInput.xml"/>
+                <file filename="resources/test/xml/data/DemoSvcInput.xml"/>
             </input>
             <expected>
-                <file filename="resources/data/DemoSvcOutput.xml"/>
+                <file filename="resources/test/xml/data/DemoSvcOutput.xml"/>
             </expected>
         </service>
     </webMethodsTestCase>
