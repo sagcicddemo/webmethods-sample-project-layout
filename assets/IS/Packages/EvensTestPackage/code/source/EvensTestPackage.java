@@ -7,7 +7,6 @@ import com.wm.util.Values;
 import com.wm.app.b2b.server.Service;
 import com.wm.app.b2b.server.ServiceException;
 // --- <<IS-START-IMPORTS>> ---
-import java.util.*;
 // --- <<IS-END-IMPORTS>> ---
 
 public final class EvensTestPackage
@@ -26,11 +25,25 @@ public final class EvensTestPackage
 
 
 
-	public static final void calculateMeanStandDev (IData pipeline)
+	public static final void calcStandDeviation (IData pipeline)
         throws ServiceException
 	{
-		// --- <<IS-START(calculateMeanStandDev)>> ---
+		// --- <<IS-START(calcStandDeviation)>> ---
 		// @sigtype java 3.5
+		// [i] field:2:required list
+		// [o] field:0:required result
+		// pipeline
+		IDataCursor pipelineCursor = pipeline.getCursor();
+			String[][]	list = IDataUtil.getStringTable( pipelineCursor, "list" );
+		
+		
+			
+			
+			
+			
+		// pipeline
+		IDataUtil.put( pipelineCursor, "result", "result" );
+		pipelineCursor.destroy();
 		// --- <<IS-END>> ---
 
                 
