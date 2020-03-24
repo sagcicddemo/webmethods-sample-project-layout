@@ -47,7 +47,7 @@ pipeline {
             	def uploadSpec = """{
               	"files": [
                  	{
-              		 	  "pattern": "(target/CIDemo/build/)(**)",
+              		 	  "pattern": "(target/cidemo/build/)(**)",
                		 	 "target": "cidemo-repo/{2}",
                			  "flat": "false",
             	     	 "recursive": "true"
